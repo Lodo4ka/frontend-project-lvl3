@@ -7,8 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
-<body>
-    <div id="root">
-    </div>
+<body class="min-vh-100">
+<div id="root">
+    <main class="flex-grow-1">
+        <div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto text-white">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control w-100" placeholder="Username"
+                                       aria-label="Username"
+                                       aria-describedby="basic-addon1">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" aria-label="add" class="btn btn-lg btn-primary h-100">Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
 </body>
 </html>
